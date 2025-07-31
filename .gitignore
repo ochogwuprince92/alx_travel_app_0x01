@@ -7,10 +7,7 @@ __pycache__/
 *.so
 
 # Virtual environments
-env/
-venv/
-ENV/
-.venv/
+travel
 
 # Django stuff:
 *.log
