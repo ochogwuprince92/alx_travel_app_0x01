@@ -9,7 +9,6 @@ class Listing(models.Model):
     def __str__(self):
         return self.title
 
-
 class Booking(models.Model):
     listing = models.ForeignKey(Listing, on_delete=models.CASCADE, related_name='bookings')
     customer_name = models.CharField(max_length=100)
@@ -17,7 +16,6 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.customer_name} - {self.listing.title}"
-
 
 class Review(models.Model):
     listing = models.ForeignKey(Listing, on_delete=models.CASCADE, related_name='reviews')
